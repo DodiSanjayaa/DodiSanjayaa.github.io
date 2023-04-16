@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <title>About - Dodi Sanjaya</title>
+  <link rel="icon" href="dxd.png" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <a href="index.html">
+        <div class="logo"><img src="dxd.png"></div>
+      </a>
+      <ul class="links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <div class="dropdown_menu">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </div>
+  </header>
+
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">About<span></h1>
+        <p class="section-teks">Hai, saya Dodi Sanjaya. Seorang mahasiswa yang kebetulan bikin video di <i
+            class="section-teks">YouTube.</i>
+          Sedang sibuk menikmati hidup dengan cara menjalaninya.</p> <br>
+        <p class="section-teks"><br>Saya mengambil jurusan Teknik informatika di Universitas
+          Budi Darma dan saya masuk kuliah pada tahun 2019. Terdengar tidak penting, tapi setidaknya saya bisa memulai
+          obrolan dengan, “…sebagai anak IT,”
+        <p>
+          <br>
+        <p class="section-teks"><br>Memulai karir lewat YouTube pada tahun 2018, tanpa saya sadarin ternyata sudah
+          hampir 6 tahun memulainya. Di YouTube
+          konten yang saya buat adalah tutorial dan chennel kedua saya konten gaming. Selain membuat video di YouTube
+          saya juga membuat ilustrator di website
+          seperti shutterstock.</p> <br>
+        <p class="section-teks"><br>Saya suka dengerin lagu Nirvana, Oasis, dan Guns N' Roses. Memang terlihat sangat
+          jadul,
+          tapi itu tidak penting karena yang lebih penting lagunya enak-enak. Saya juga suka nonton anime, Hunter X
+          Hunter anime yang saya suka,
+          sesekali juga suka baca buku, tapi itu kalo udah capek main game.</p>
+      </div>
+
+
+
+
+      <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+          dropDownMenu.classList.toggle('open')
+          const isOpen = dropDownMenu.classList.contains('open')
+
+          toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+      </script>
+</body>
+<style>
+  html {
+    background: url(bg.PNG)no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+</style>
+</div>
+<div class="footer-about">
+  <p>copyright &copy; 2023 Dodi Sanjaya</p>
+</div>
+</footer>
+
+</html>
